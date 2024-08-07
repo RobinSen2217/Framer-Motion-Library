@@ -20,7 +20,7 @@ const generateSections=(count,color,rotate)=>{
 function Matrix() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
-    targe: ref,
+    target: ref,
     offset: ["start start", "end end"],
   });
   const rotate = useTransform(scrollYProgress, [0, 1], ["0deg", "90deg"]);
